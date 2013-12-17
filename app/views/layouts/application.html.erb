@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render :partial => "shared/errors"%>
+  <% if logged_in? %>
+    <%= button_to("Log out", session_url, :method => :delete) %>
+  <% else %>
+    <%= link_to("Sign in", new_session_url) %>
+    <%= link_to("Sign up", new_user_url) %>
+  <% end %>
 
 <%= yield %>
 

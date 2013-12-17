@@ -115,6 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable
   bcrypt-ruby
   better_errors
   binding_of_caller

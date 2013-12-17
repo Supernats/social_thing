@@ -1,0 +1,8 @@
+<p><%= @user.email %></p>
+<form action="<%= password_reset_url %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  <input type="hidden" name="user[id]" value="<%= @user.id %>">
+  <label for="password">Password</label>
+  <input type="password" name="user[password]" id="password">
+  <input type="submit" value"Set new password">
+</form>
