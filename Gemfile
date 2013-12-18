@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'letter_opener'
-gem 'addressable'
+gem 'addressable', :require => 'addressable/uri'
+gem 'launchy', :require => 'launchy'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,6 +10,7 @@ gem 'addressable'
 gem 'pg'
 
 group :development do
+  gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
@@ -30,7 +31,7 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', :require => 'bcrypt'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

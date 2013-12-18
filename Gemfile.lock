@@ -121,6 +121,7 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 3.2.1)
   jquery-rails
+  launchy
   letter_opener
   pg
   rails (= 3.2.14)
